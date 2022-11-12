@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
 :root {
     font-size: 16px;
     --white-color: #FFFFFF;
@@ -31,6 +38,18 @@
 
 .navbar .menu {
     display: none;
+}
+
+.header {
+    background-color: var(--primary-color);
+}
+
+.header .img-header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+    width: 100%;
 }
 
 @media screen and (min-width: 450px) {
