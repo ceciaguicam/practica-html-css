@@ -8,7 +8,8 @@
 :root {
     font-size: 16px;
     --white-color: #FFFFFF;
-    --primary-color: #3eec98;
+    --try-color: #3eec98;
+    --primary-color: #5ac3e0;
     --secundary-color: #b26eee;
 }
 
@@ -40,7 +41,11 @@
     display: none;
 }
 
-.header, .myself {
+.header {
+    background-color: var(--primary-color);
+}
+
+.myself {
     background-color: var(--primary-color);
 }
 
@@ -57,11 +62,12 @@
 
 .myself .info {
     font-family: Calibri;
-    color: #077640;
+    color: #0b7492;
 }
 .myself .info .info-title {
     font-weight: bold;
     margin: 0 0 10px 10px;
+    font-size: larger;
 }
 
 .myself .info .info-text {
@@ -72,6 +78,53 @@
 .info-text b { 
     font-weight: bold; 
 }
+
+
+.myself .fav-swords {
+    margin: 0 10px 10px 10px;
+    font-family: Calibri;
+    color: #0b7492;
+}
+
+
+.myself .fav-swords .swords-title {
+    font-weight: bold;
+    font-size: larger;
+}
+
+*{box-sizing: border-box}
+
+.espada {
+  width: 100%; 
+  background-color: var(--white-color);
+}
+
+.fav-swords p {
+  text-align: left; 
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  color: #0b7492;
+}
+
+.espada-dorada {
+    width: 60%; 
+    background-color: var(--secundary-color);
+    padding-left: 10px;
+} 
+.espada-sangre {
+    width: 40%; 
+    background-color: var(--secundary-color);
+    padding-left: 10px;
+} 
+.espada-hierba {
+    width: 80%; background-color: var(--secundary-color);
+    padding-left: 10px;
+} 
+.espada-finn {
+    width: 100%; 
+    background-color: var(--secundary-color);
+    padding-left: 10px;
+} 
 
 @media screen and (min-width: 450px) {
     .navbar .menu {
@@ -95,4 +148,5 @@
     .navbar .menu .link:hover {
         color: var(--white-color);
     }
+    
 }
