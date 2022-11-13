@@ -70,6 +70,63 @@
 
         </div>
     </section>
+
+    <section class="formulario">
+        <h2>¡Regístrate!</h2>
+        <form action="registro.html">
+            <div class="pregunta-form">
+                <div class="pregunta"><label for="name">Nombre</label></div>
+                <div class="respuesta"><input required id="name" name="name" type="text" placeholder="Añade tu nomnbre"></div>
+            </div>
+            
+            <div class="pregunta-form">
+                <div class="pregunta"><label for="surname">Apellido/s</label></div>
+                <div class="respuesta"><input required id="surname" name="surname" type="text" placeholder="Añade tu/s apellido/s"></div>
+            </div>
+
+            <div class="pregunta-form">
+                <div class="pregunta"><label for="phone">Número de teléfono</label></div>
+                <div class="respuesta"><input type="tel" id="phone" name="phone" pattern="[0-9]+" placeholder="Añade tu número de teléfono"></div>
+            </div>
+
+            <fieldset>
+                <div class="pregunta-final"><legend>¿Cuál es tu personaje favorito?</legend></div>
+                
+                <div class="opcion">
+                    <label for="finn">Finn el Humano</label>
+                    <input required id="finn" type="radio" name="fav" value="finn">
+                </div>
+                
+                <div class="opcion">
+                    <label for="jake">Jake el Perro</label>
+                    <input required id="jake" type="radio" name="fav" value="jake">
+                </div>
+
+                <div class="opcion">
+                    <label for="chicle">Princesa Chicle</label>
+                    <input required id="chicle" type="radio" name="fav" value="chicle">
+                </div>
+
+                <div class="opcion">
+                    <label for="marcy">Marceline</label>
+                    <input required id="marcy" type="radio" name="fav" value="marcy">
+                </div>
+
+                <div class="opcion">
+                    <label for="hielo">Rey Hielo</label>
+                    <input required id="hielo" type="radio" name="fav" value="hielo">
+                </div>
+
+                <div class="opcion">
+                    <label for="llama">Princesa Llama</label>
+                    <input required id="llama" type="radio" name="fav" value="llama">
+                </div>
+                
+            </fieldset>
+            
+            <div class="boton-enviar"><input type="submit"></div>
+        </form>
+    </section>
     
 </body>
 </html>

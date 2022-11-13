@@ -17,6 +17,12 @@
     text-decoration: none;
 }
 
+h2 {
+    font-weight: bold;
+    margin: 0 0 10px 10px;
+    font-size: larger;
+}
+
 .navbar {
     background-color: var(--secundary-color);
     display: flex;
@@ -41,13 +47,10 @@
     display: none;
 }
 
-.header {
+.header, .myself, .formulario {
     background-color: var(--primary-color);
 }
 
-.myself {
-    background-color: var(--primary-color);
-}
 
 .header .container .img-header {
     padding: 10px 0 10px 0;
@@ -64,6 +67,7 @@
     font-family: Calibri;
     color: #0b7492;
 }
+
 .myself .info .info-title {
     font-weight: bold;
     margin: 0 0 10px 10px;
@@ -79,13 +83,11 @@
     font-weight: bold; 
 }
 
-
 .myself .fav-swords {
     margin: 0 10px 10px 10px;
     font-family: Calibri;
     color: #0b7492;
 }
-
 
 .myself .fav-swords .swords-title {
     font-weight: bold;
@@ -102,7 +104,7 @@
 .fav-swords p {
   text-align: left; 
   padding-top: 10px;
-  padding-bottom: 10px; 
+  margin-bottom: 10px; 
   color: #0b7492;
 }
 
@@ -116,15 +118,34 @@
     background-color: var(--secundary-color);
     padding-left: 10px;
 } 
+
 .espada-hierba {
     width: 80%; background-color: var(--secundary-color);
     padding-left: 10px;
 } 
+
 .espada-finn {
     width: 100%; 
     background-color: var(--secundary-color);
     padding-left: 10px;
 } 
+
+.formulario {
+    font-family: Calibri;
+    color: #0b7492;
+}
+
+.formulario .pregunta-form, .opcion, .pregunta-final, .boton-enviar {
+    margin: 10px 0 10px 10px;
+}
+
+.pregunta-final {
+    font-weight: bold;
+}
+
+.pregunta, .respuesta {
+    margin: 10px 0 10px 0;
+}
 
 @media screen and (min-width: 450px) {
     .navbar .menu {
