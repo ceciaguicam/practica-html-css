@@ -40,21 +40,51 @@
     display: none;
 }
 
-.header {
+.header, .myself {
     background-color: var(--primary-color);
 }
 
-.header .img-header {
+.header .container .img-header {
+    padding: 10px 0 10px 0;
+    width: 100%;
+}
+
+.header .container {
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: 10px 0 10px 0;
-    width: 100%;
+}
+
+.myself .info {
+    font-family: Calibri;
+    color: #077640;
+}
+.myself .info .info-title {
+    font-weight: bold;
+    margin: 0 0 10px 10px;
+}
+
+.myself .info .info-text {
+    text-align: justify;
+    margin: 0 10px 10px 10px;
+}
+
+.info-text b { 
+    font-weight: bold; 
 }
 
 @media screen and (min-width: 450px) {
     .navbar .menu {
         display: flex;
+    }
+
+    .header .container {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .header .container .img-header {
+        width: 80%;
     }
 }
 
@@ -65,3 +95,4 @@
     .navbar .menu .link:hover {
         color: var(--white-color);
     }
+}
