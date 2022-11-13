@@ -67,13 +67,11 @@
             <div class="espada">
                 <div class="espada-finn">100%</div>
             </div>
-
         </div>
-    </section>
 
-    <section class="formulario">
-        <h2>¡Regístrate!</h2>
-        <form action="registro.html">
+        <div class="formulario">
+            <h2>¡Regístrate!</h2>
+            <form action="registro.html">
             <div class="pregunta-form">
                 <div class="pregunta"><label for="name">Nombre</label></div>
                 <div class="respuesta"><input required id="name" name="name" type="text" placeholder="Añade tu nomnbre"></div>
@@ -87,6 +85,11 @@
             <div class="pregunta-form">
                 <div class="pregunta"><label for="phone">Número de teléfono</label></div>
                 <div class="respuesta"><input type="tel" id="phone" name="phone" pattern="[0-9]+" placeholder="Añade tu número de teléfono"></div>
+            </div>
+
+            <div class="pregunta-form">
+                <div class="pregunta"><label for="gituser">Usuario de GitHub</label></div>
+                <div class="respuesta"><input type="gituser" id="gituser" name="gituser" pattern="^@[^\s]+" placeholder="Añade tu usuario de GitHub"></div>
             </div>
 
             <fieldset>
@@ -123,10 +126,40 @@
                 </div>
                 
             </fieldset>
+
+            
+            <div class="comentarios">
+                <p>Comentarios</p>
+                <label for="comentarios"></label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10" placeholder="¿Quieres comentar algo? ¡No te cortes!"></textarea>
+            </div>
+            
             
             <div class="boton-enviar"><input type="submit"></div>
         </form>
+
+        </div>
     </section>
+
+    <footer>
+        <ul class="rrss">
+            <li class="rrss-logo">
+                <a href="https://twitter.com/fiNNtheBeaner?s=20&t=QqO7DGA2GSin1B8MnWfSbQ">
+                    <img class="twt" src="/imagenes/twitter-logo.png" alt="Twitter">
+                </a>
+            </li>
+            <li class="rrss-logo">
+                <a href="https://www.instagram.com/finn_el_.humano_/">
+                    <img class="ig" src="/imagenes/ig-logo.png" alt="Instagram">
+                </a>
+            </li>
+            <li class="rrss-logo">
+                <a href="https://www.facebook.com/finn.elhumano.794">
+                    <img class="rrss-logo" id="fb" src="/imagenes/fb-logo.png" alt="Facebook">
+                </a>
+            </li>
+        </ul>
+    </footer>
     
 </body>
 </html>

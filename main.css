@@ -13,13 +13,16 @@
     --secundary-color: #b26eee;
 }
 
+.body {
+    background-color: var(--primary-color);
+}
+
 .link {
     text-decoration: none;
 }
 
 h2 {
     font-weight: bold;
-    margin: 0 0 10px 10px;
     font-size: larger;
 }
 
@@ -68,12 +71,9 @@ h2 {
     color: #0b7492;
 }
 
-.myself .info .info-title {
-    font-weight: bold;
+.info-title {
     margin: 0 0 10px 10px;
-    font-size: larger;
 }
-
 .myself .info .info-text {
     text-align: justify;
     margin: 0 10px 10px 10px;
@@ -89,12 +89,7 @@ h2 {
     color: #0b7492;
 }
 
-.myself .fav-swords .swords-title {
-    font-weight: bold;
-    font-size: larger;
-}
-
-*{box-sizing: border-box}
+/**{box-sizing: border-box}*/
 
 .espada {
   width: 100%; 
@@ -128,15 +123,22 @@ h2 {
     width: 100%; 
     background-color: var(--secundary-color);
     padding-left: 10px;
-} 
+}
 
 .formulario {
     font-family: Calibri;
     color: #0b7492;
 }
 
-.formulario .pregunta-form, .opcion, .pregunta-final, .boton-enviar {
+.formulario h2 {
     margin: 10px 0 10px 10px;
+}
+.pregunta-form, .opcion, .pregunta-final, .boton-enviar {
+    margin: 10px 0 0 10px;
+}
+
+.boton-enviar {
+    padding-bottom: 10px;
 }
 
 .pregunta-final {
@@ -146,6 +148,40 @@ h2 {
 .pregunta, .respuesta {
     margin: 10px 0 10px 0;
 }
+
+.comentarios p{
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.comentarios {
+    margin: 0 0 10px 10px;
+}
+
+.rrss{
+    background-color: var(--secundary-color);
+    display: flex;
+    align-content: center;
+    align-content: space-between;
+    justify-content: center;
+}
+
+.rrss-logo {  
+    padding: 10px 10px 10px 10px;
+}
+
+.twt{
+    width: 20%;
+}
+
+.fb{
+    width: 15%;
+}
+
+.ig{
+    width: 50%;
+}
+
 
 @media screen and (min-width: 450px) {
     .navbar .menu {
